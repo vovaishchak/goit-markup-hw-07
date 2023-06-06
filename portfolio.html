@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,16 +23,14 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
-  <!--Header-->
-
   <body>
     <header class="pages-header">
       <div class="container site-nav">
-        <nav class="site-nav">
+        <nav class="site-nav nav-mobile">
           <a href="./index.html" class="logo link"
             >Web<span class="studio">Studio</span></a
           >
+
           <ul class="list navigation">
             <li class="item">
               <a href="./index.html" class="link-nav link">Studio</a>
@@ -42,9 +40,23 @@
                 >Portfolio</a
               >
             </li>
-            <li class="item"><a href="" class="link-nav link">Contacts</a></li>
+            <li class="item">
+              <a href="" class="link-nav link">Contacts</a>
+            </li>
           </ul>
+          <!-- BURGER  -->
+
+          <button
+            class="menu-toggle js-open-menu bgcolor"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="32" height="22" stroke="black">
+              <use href="./images/icons.svg#icon-burgermenu"></use>
+            </svg>
+          </button>
         </nav>
+
         <address class="adrs">
           <ul class="list">
             <li class="item">
@@ -61,9 +73,6 @@
         </address>
       </div>
     </header>
-
-    <!--Main-->
-
     <main>
       <section class="section-port">
         <div class="container">
@@ -83,12 +92,37 @@
             <li class="item-prtf">
               <a href="" class="link shadow">
                 <div class="img-hover">
-                  <img
-                    src="./images/bankingappinterfaceconcept.jpg"
-                    alt="banking app interface concept"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/prtf/imgbank_desk@1x.jpg 360w,
+                        ./images/prtf/imgbank_desk@2x.jpg 720w
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/prtf/imgbank_tab@1x.jpg 356w,
+                        ./images/prtf/imgbank_tab@2x.jpg 712w
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 428px)"
+                      srcset="
+                        ./images/prtf/imgbank_mob@1x.jpg 396w,
+                        ./images/prtf/imgbank_mob@2x.jpg 792w
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/01banking.jpg"
+                      alt="Banking App Interface Concept"
+                      width="396"
+                    />
+                  </picture>
                   <div class="text-img">
                     <p>
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -102,19 +136,44 @@
                   <h2 class="header-portf head-style">
                     Banking App Interface Concept
                   </h2>
-                  <p class="text">App</p>
+                  <p class="text-team">App</p>
                 </div>
               </a>
             </li>
             <li class="item-prtf">
               <a href="" class="link shadow">
                 <div class="img-hover">
-                  <img
-                    src="./images/cashlesspayment.jpg"
-                    alt="cashless payment"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/prtf/imgcash_desk@1x.jpg 360w,
+                        ./images/prtf/imgcash_desk@2x.jpg 720w
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/prtf/imgcash_tab@1x.jpg 356w,
+                        ./images/prtf/imgcash_tab@2x.jpg 712w
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 428px)"
+                      srcset="
+                        ./images/prtf/imgcash_mob@1x.jpg 396w,
+                        ./images/prtf/imgcash_mob@1x.jpg 792w
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/02cashes.jpg"
+                      alt="Cashless Payment"
+                      width="396"
+                    />
+                  </picture>
                   <div class="text-img">
                     <p>
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -126,19 +185,44 @@
 
                 <div class="text-prtf">
                   <h2 class="header-portf head-style">Cashless Payment</h2>
-                  <p class="text">Marketing</p>
+                  <p class="text-team">Marketing</p>
                 </div>
               </a>
             </li>
             <li class="item-prtf">
               <a href="" class="link shadow">
                 <div class="img-hover">
-                  <img
-                    src="./images/meditationapp.jpg"
-                    alt="meditaion app"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/prtf/imgmedia_desk@1x.jpg 360w,
+                        ./images/prtf/imgmedia_desk@2x.jpg 720w
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/prtf/imgmedia_tab@1x.jpg 356w,
+                        ./images/prtf/imgmedia_tab@2x.jpg 712w
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 428px)"
+                      srcset="
+                        ./images/prtf/imgmedia_mob@1x.jpg 396w,
+                        ./images/prtf/imgmedia_mob@2x.jpg 792w
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/03meditation.jpg"
+                      alt="Meditaion App"
+                      width="396"
+                    />
+                  </picture>
                   <div class="text-img">
                     <p>
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -150,19 +234,44 @@
 
                 <div class="text-prtf">
                   <h2 class="header-portf head-style">Meditation App</h2>
-                  <p class="text">App</p>
+                  <p class="text-team">App</p>
                 </div>
               </a>
             </li>
             <li class="item-prtf">
               <a href="" class="link shadow">
                 <div class="img-hover">
-                  <img
-                    src="./images/taxiservice.jpg"
-                    alt="taxi service"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/prtf/imgtaxi_desk@1x.jpg 360w,
+                        ./images/prtf/imgtaxi_desk@2x.jpg 720w
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/prtf/imgtaxi_tab@1x.jpg 356w,
+                        ./images/prtf/imgtaxi_tab@2x.jpg 712w
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 428px)"
+                      srcset="
+                        ./images/prtf/imgtaxi_mob@1x.jpg 396w,
+                        ./images/prtf/imgtaxi_mob@2x.jpg 792w
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/04taxi.jpg"
+                      alt="Taxi Service"
+                      width="396"
+                    />
+                  </picture>
                   <div class="text-img">
                     <p>
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -181,12 +290,37 @@
             <li class="item-prtf">
               <a href="" class="link shadow">
                 <div class="img-hover">
-                  <img
-                    src="./images/screenillustrations.jpg"
-                    alt="screen illustrations"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/prtf/imgscrn_desk@1x.jpg 360w,
+                        ./images/prtf/imgscrn_desk@2x.jpg 720w
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        /images/prtf/imgscrn_tab@1x.jpg  356w,
+                        ./images/prtf/imgscrn_tab@2x.jpg 712w
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 428px)"
+                      srcset="
+                        /images/prtf/imgscrn_mob@1x.jpg  396w,
+                        ./images/prtf/imgscrn_mob@2x.jpg 792w
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/05screen.jpg"
+                      alt="Screen Illustrations"
+                      width="396"
+                    />
+                  </picture>
                   <div class="text-img">
                     <p>
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -198,19 +332,44 @@
 
                 <div class="text-prtf">
                   <h2 class="header-portf head-style">Screen Illustrations</h2>
-                  <p class="text">Design</p>
+                  <p class="text-team">Design</p>
                 </div>
               </a>
             </li>
             <li class="item-prtf">
               <a href="" class="link shadow">
                 <div class="img-hover">
-                  <img
-                    src="./images/onlinecourses.jpg"
-                    alt="online courses"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/prtf/imgonline_desk@1x.jpg 360w,
+                        ./images/prtf/imgonline_desk@2x.jpg 720w
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/prtf/imgonline_tab@1x.jpg 356w,
+                        ./images/prtf/imgonline_tab@2x.jpg 712w
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 428px)"
+                      srcset="
+                        ./images/prtf/imgonline_mob@1x.jpg 396w,
+                        ./images/prtf/imgonline_mob@2x.jpg 792w
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/06online.jpg"
+                      alt="Online Courses"
+                      width="396"
+                    />
+                  </picture>
                   <div class="text-img">
                     <p>
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -222,19 +381,44 @@
 
                 <div class="text-prtf">
                   <h2 class="header-portf head-style">Online Courses</h2>
-                  <p class="text">Marketing</p>
+                  <p class="text-team">Marketing</p>
                 </div>
               </a>
             </li>
             <li class="item-prtf">
               <a href="" class="link shadow">
                 <div class="img-hover">
-                  <img
-                    src="./images/instagramstoriesconcept.jpg"
-                    alt="instagram stories concept"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/prtf/imginst_desk@1x.jpg 360w,
+                        ./images/prtf/imginst_desk@2x.jpg 720w
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/prtf/imginsta_tab@1x.jpg 356,
+                        ./images/prtf/imginsta_tab@2x.jpg 712w
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 428px)"
+                      srcset="
+                        ./images/prtf/imginsta_mob@1x.jpg 396w,
+                        ./images/prtf/imginsta_mob@2x.jpg 796w
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/07stories.jpg"
+                      alt="Instagram Stories Concept"
+                      width="396"
+                    />
+                  </picture>
                   <div class="text-img">
                     <p>
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -243,24 +427,48 @@
                     </p>
                   </div>
                 </div>
-
                 <div class="text-prtf">
                   <h2 class="header-portf head-style">
                     Instagram Stories Concept
                   </h2>
-                  <p class="text">Design</p>
+                  <p class="text-team">Design</p>
                 </div>
               </a>
             </li>
             <li class="item-prtf">
               <a href="" class="link shadow">
                 <div class="img-hover">
-                  <img
-                    src="./images/organicfood.jpg"
-                    alt="organic food"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/prtf/imgorganic_desk@1x.jpg 360w,
+                        ./images/prtf/imgorganic_desk@2x.jpg 720w
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/prtf/imgorganic_tab@1x.jpg 356w,
+                        ./images/prtf/imgorganic_tab@2x.jpg 712w
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 428px)"
+                      srcset="
+                        ./images/prtf/imgorganic_mob@1x.jpg 396w,
+                        ./images/prtf/imgorganic_mob@2x.jpg 796w
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/08organic.jpg"
+                      alt="Organic Food"
+                      width="396"
+                    />
+                  </picture>
                   <div class="text-img">
                     <p>
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -269,22 +477,46 @@
                     </p>
                   </div>
                 </div>
-
                 <div class="text-prtf">
                   <h2 class="header-portf head-style">Organic Food</h2>
-                  <p class="text">Web Site</p>
+                  <p class="text-team">Web Site</p>
                 </div>
               </a>
             </li>
             <li class="item-prtf">
               <a href="" class="link shadow">
                 <div class="img-hover">
-                  <img
-                    src="./images/freshcoffee.jpg"
-                    alt="fresh coffee"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/prtf/imgfresh_desk@1x.jpg 360w,
+                        ./images/prtf/imgfresh_desk@2x.jpg 720w
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/prtf/imgfresh_tab@1x.jpg 356w,
+                        ./images/prtf/imgfresh_tab@2x.jpg 712w
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 428px)"
+                      srcset="
+                        ./images/prtf/imgfrash_mob@1x.jpg 396w,
+                        ./images/prtf/imgfrash_mob@2x.jpg 792w
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/09coffee.jpg"
+                      alt="Fresh Coffee"
+                      width="396"
+                    />
+                  </picture>
                   <div class="text-img">
                     <p>
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -293,10 +525,9 @@
                     </p>
                   </div>
                 </div>
-
                 <div class="text-prtf">
                   <h2 class="header-portf head-style">Fresh Coffee</h2>
-                  <p class="text">Web Site</p>
+                  <p class="text-team">Web Site</p>
                 </div>
               </a>
             </li>
@@ -304,11 +535,8 @@
         </div>
       </section>
     </main>
-
-    <!--Footer-->
-
     <footer class="foot">
-      <div class="container foot-social">
+      <div class="container foot-social container-width">
         <div class="cont-foot">
           <a href="./index.html" class="logo logo-foot link"
             >Web<span class="studio-footer">Studio</span></a
@@ -368,7 +596,69 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+
+    <!-- modal mobile -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="modal-svg-cls" width="8" height="8">
+          <use href="./images/icons.svg#icon-krest"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li>
+          <a href="index.html" class="link menu-nav-text">Studio</a>
+        </li>
+        <li>
+          <a href="portfolio.html" class="link menu-nav-curent">Portfolio</a>
+        </li>
+        <li><a href="" class="link menu-nav-text">Contacts</a></li>
+      </ul>
+
+      <ul class="mobile-addres list">
+        <li class="item">
+          <a href="tel:+110001111111" class="number-contacts link"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="item">
+          <a href="mailto:info@devstudio.com" class="mail-contacts link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="social-med-menu">
+        <li class="icons-items-foot">
+          <a href="" class="social-bg-foot">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="icons-items-foot">
+          <a href="" class="social-bg-foot">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="icons-items-foot">
+          <a href="" class="social-bg-foot">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="icons-items-foot">
+          <a href="" class="social-bg-foot">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
